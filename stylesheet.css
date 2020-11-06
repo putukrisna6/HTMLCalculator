@@ -32,6 +32,11 @@ body {
   color: white;
   padding: 1% 0;
 }
+@media screen and (max-width: 800px) {
+  #desc {
+    padding: 0 15px;
+  }
+}
 
 table {
   margin: auto;
