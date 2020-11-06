@@ -1,5 +1,36 @@
 body {
-  background-color: #888;
+  background-color: #a0a0a0;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.column {
+  width: 100%;
+  margin: 50px auto;
+  float: left;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .column {
+    width: 50%;
+  }
+}
+
+#desc {
+  background-color: #495069;
+  border-radius: 50px;
+  color: white;
+  padding: 1% 0;
 }
 
 table {
@@ -32,28 +63,18 @@ input {
 }
 
 input:hover {
+  color: #fff;
+  background-color: #495069;
   border: 0 solid #000;
-  color: #495069;
-  background-color: #fff;
-  border-radius: 4px;
-  width: 60px;
-  height: 50px;
-  float: left;
   margin: 5px;
-  font-size: 20px;
   box-shadow: 0 4px #b0d2cf;
 }
 
 input:active {
   top: 4px;
   border: 0 solid #000;
-  color: #495069;
-  background-color: #fff;
-  border-radius: 4px;
-  width: 60px;
-  height: 50px;
-  float: left;
   margin: 5px;
+  transform: scale(1.1);
   font-size: 20px;
   box-shadow: none;
 }
@@ -73,6 +94,8 @@ input:active {
   text-align: right;
   background-color: #bcbd95;
   box-shadow: 0 4px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+  color: #495069;
 }
 
 #display:active {
@@ -82,6 +105,7 @@ input:active {
   text-align: right;
   background-color: #bcbd95;
   box-shadow: 0 4px rgba(0,0,0,0.2);
+  transform: scale(1);
 }
 
 .operator {
@@ -90,11 +114,13 @@ input:active {
 }
 
 .operator:hover {
+  color: #495069;
   background-color: #cee9ea;
-  box-shadow: 0 4px #b0d2cf;
+  box-shadow: 0 4px #495069;
 }
 
 .operator:active {
+  color: #495069;
   top: 4px;
   box-shadow: none;
 }
@@ -110,7 +136,7 @@ input:active {
   float: left;
   display: block;
   background-color: #F297A0;
-  margin-bottom: 15px;
+  margin: 5px;
   box-shadow: 0 4px #CC7F86;
 }
 
@@ -119,6 +145,6 @@ input:active {
   top: 4px;
   display: block;
   background-color: #F297A0;
-  margin-bottom: 15px;
+  margin: 5px;
   box-shadow: none;
 }
